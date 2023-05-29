@@ -1,0 +1,47 @@
+[
+    {
+        "id":1,
+        "image": "/images/to-do-list.png",
+        "name":"Todo-List",
+        "description": "Create a todo-list web app, using React Typescript, SCSS",
+        "demo": "https://truongcongtrung2709-typescript-todolist.vercel.app/",
+        "source":"https://github.com/truongcongtrung2709/typescript-todolist"
+        
+    },
+    {
+        "id":2,
+        "image": "/images/ketoanchatviet.png",
+        "name":"Kế Toán Chất Việt",
+        "description": "Create a website with WordPress, which to sell accounting service, using PHP, CSS",
+        "demo": "ketoanchatviet.com",
+        "source":"ketoanchatviet.com"
+        
+    },
+    {
+        "id":3,
+        "image": "/images/cineCo.png",
+        "name":"CineCo(Cinema)",
+        "description": "Movie Web using ReactJS with main features is booking tickets, watch Trailer, movie details, authentication, authorzation.Using ReactJS, Redux",
+        "demo": "https://cineco.vercel.app/",
+        "source":"https://github.com/Cong-Thi/CineCO"
+        
+    },
+    {
+        "id":4,
+        "image": "/images/airbnb.png",
+        "name":"Air BNB",
+        "description": "Booking Hotels, Homestay all around the world, search locations, Find hotels of locations, hotels detail,.. Using ReactJS, Redux",
+        "demo": "https://capstone-airbnb-trung-thi.vercel.app/",
+        "source":"https://github.com/truongcongtrung2709/capstone__airbnb__trung-thi"
+        
+    },
+    {
+        "id":5,
+        "image": "/images/masterwork.png",
+        "name":"Masterwork-Liberty",
+        "description": "Building one-page web with HTML, CSS, JS.",
+        "demo": "https://www.youtube.com/watch?v=I0KU8_L65lY&;ab_channel=TrungTr%C6%B0%C6%A1ng",
+        "source":"https://github.com/truongcongtrung2709/capstone__masterwork-liberty"
+        
+    }
+]

@@ -1,0 +1,39 @@
+[
+    { 
+        "image":"/images/html-5.png",
+        "name":"HTML",
+        "description":"HTML5, Bootstrap 4"
+    },
+    { 
+        "image":"/images/css.png",
+        "name":"CSS",
+        "description":"CSS, SCSS/SASS, Responsive"
+    },
+    { 
+        "image":"/images/java-script.png",
+        "name":"Javascript",
+        "description":"ES5/ES6"
+    },
+    { 
+        "image":"/images/typescript.png",
+        "name":"TypeScript",
+        "description":"React-Typescript"
+    },
+    
+    { 
+
+        "image":"/images/react.png",
+        "name":"ReactJS",
+        "description":"ReactJS basic, Router, Redux, Hooks"
+    },
+    { 
+        "image":"/images/git.png",
+        "name":"Git",
+        "description":"Git basic"
+    },
+    { 
+        "image":"/images/wordpress.png",
+        "name":"Wordpress",
+        "description":"Domain, Hosting, PHP, JavaScript"
+    }
+]

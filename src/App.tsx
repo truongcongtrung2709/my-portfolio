@@ -1,9 +1,15 @@
-import React,{ useRef, useState } from 'react'
+import React, { useState } from 'react'
 import './app.scss'
 import Header from './components/Header'
 import Banner from './components/Banner'
-import About from './components/About/About'
+import About from './components/About'
+import Skills from './components/Skills'
+import Projects from './components/Projects/Projects'
+import Contact from './components/Contact/Contact'
+import Footer from './components/Footer/Footer'
 const App: React.FC = () => {
+  const [showModal, setShowModal] = useState<boolean>(false);
+  
   let Links: {name: string, link: string}[] = [
     {name: "Home", link:"/"},
     {name: "About", link:"/"},
@@ -11,27 +17,15 @@ const App: React.FC = () => {
     {name: "Project", link:"/"},
     {name: "Contact", link:"/"},
   ]
-  const titleRef = useRef<HTMLDivElement>(null)
-  const scrollToView = () => {
-    titleRef.current?.scrollIntoView({behavior: "smooth"})
-  }
   return (
     <>
-    <Header Links={Links} scrollToView={scrollToView}/>
+    <Header Links={Links}/>
     <Banner/>
-    <About 
-    titleRef={titleRef}
-     scrollToView={scrollToView}
-     />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-
+    <About/>
+    <Skills/>
+    <Projects showModal={showModal} setShowModal={setShowModal}/>
+    <Contact/>
+    <Footer/>
     </>
   )
 }
