@@ -2,7 +2,7 @@ import React from 'react'
 
 const About: React.FC = () => {
   return (
-    <div  className='max-w-screen-xl mx-auto py-5'>
+    <div id='about'  className='max-w-screen-xl mx-auto py-5'>
       <h1 className='text-center text-4xl sm:text-6xl'>About Me</h1>
       <div className="flex flex-col sm:flex-row items-center">
         <div className=" w-full h-full">

@@ -1,11 +1,19 @@
 import React,{useState} from 'react'
+import { forwardRef } from 'react'
+// import { NavHashLink as Link } from 'react-router-hash-link';
+import { Link } from "react-scroll";
+
 interface headerProps{
   Links: {
     name: string,
     link: string
-  }[]
+  }[],
+  // handleScrollIntoView:any,
 }
-const Header: React.FC<headerProps> = ({Links}) => {
+const Header: React.FC<headerProps> = ({Links, 
+  // handleScrollIntoView},ref
+}
+  ) => {
 
   const [isToggle, setIsToggle] = useState<boolean>(true);
   const handleToggleMenu = ()=>{
@@ -13,9 +21,12 @@ const Header: React.FC<headerProps> = ({Links}) => {
     
   }
 
+
   return (
-    <header className='shadow-md'>
-      <nav className="bg-white border-gray-200 dark:bg-gray-900 max-w-screen-xl mx-auto">
+    <header 
+    // ref={ref} 
+    id='header' className='shadow-md w-full fixed z-20 top-0 left-0 bg-white'>
+      <nav className="bg-white border-gray-200 dark:bg-gray-900 max-w-screen-xl  mx-auto">
   <div className=" flex flex-wrap items-center justify-between p-4">
     <a href="/" className="flex items-center">
         <span className="self-center text-4xl font-semibold whitespace-nowrap dark:text-white hover:text-primary transition-all">Trung.</span>
@@ -27,8 +38,9 @@ const Header: React.FC<headerProps> = ({Links}) => {
     <div className={`${isToggle? "hidden": ""}  w-full  md:block md:w-auto`} id="navbar-default">
       <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 ">
         {Links.map((item, id) => (
-          <li key={id}><a 
-            className="block py-2 pl-3 pr-4 rounded md:p-0  hover:text-white hover:bg-primary hover:md:text-primary hover:md:bg-white cursor-pointer"  aria-current="page">{item.name}</a></li>
+          <li key={id}><Link to={item.link}  smooth={true} spy={true} offset={-100} duration={1000}
+          // nClick={handleScrollIntoView}
+            className="block py-2 pl-3 pr-4 rounded md:p-0  hover:text-white hover:bg-primary hover:md:text-primary hover:md:bg-white cursor-pointer"  aria-current="page">{item.name}</Link></li>
         ))}
       </ul>
     </div>

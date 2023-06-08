@@ -19,7 +19,7 @@ const Projects:React.FC<projectsProp> = ({showModal, setShowModal}) => {
   }
   
   return (
-    <div className="">
+    <div id="projects">
     <div className='max-w-screen-xl mx-auto py-10'>
         <h1 className='text-center text-4xl sm:text-6xl pb-32'>My Projects</h1>
         <div className="sm:grid sm:grid-cols-2 md:grid-cols-3 gap-8 ">
