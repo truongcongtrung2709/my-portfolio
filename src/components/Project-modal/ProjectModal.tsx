@@ -16,7 +16,7 @@ export interface projects{
   }
 }
 const ProjectModal:React.FC<projects> = ({ 
-  project,  showModal,
+  project,
    setShowModal}: projects) => {
     
   

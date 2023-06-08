@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import './app.scss'
 import Header from './components/Header'
 import Banner from './components/Banner'
