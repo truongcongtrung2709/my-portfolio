@@ -1,5 +1,5 @@
-import React from 'react'
-import { useForm } from 'react-hook-form'
+import React, { useRef } from 'react'
+import { useForm , SubmitHandler } from 'react-hook-form'
 import {AiOutlineMail} from "react-icons/ai"
 import {AiOutlinePhone} from "react-icons/ai"
 import {AiOutlineFacebook} from "react-icons/ai"
@@ -12,13 +12,8 @@ type FormValues = {
 }
 const Contact = () => {
   
-  const {register, handleSubmit, formState: {errors}} =useForm<FormValues>({defaultValues:{
-    name:"",
-    email:"",
-    message:""
-  },
-mode: "onTouched"});
-  const onSubmit = handleSubmit((data)=> console.log(data));
+  const {register, handleSubmit, formState: {errors}} =useForm<FormValues>();
+  const onSubmit : SubmitHandler<FormValues> = (data)=> console.log(data);
 
     
   
@@ -46,7 +41,7 @@ mode: "onTouched"});
         </a>
     </div>
     <form 
-    // onSubmit={handleSubmit(onSubmit)}
+    onSubmit={handleSubmit(onSubmit)}
      className="contact-form sm:w-1/2">
     <input type="text" placeholder='Your Name' className='w-full rounded-lg p-2 mb-8' {...register('name', {required:{
       value:true,
@@ -57,16 +52,18 @@ mode: "onTouched"});
       value:true,
       message:"Please enter your Email"
       
-    }})}/>
-    <textarea   placeholder='Your Message' rows={4} cols={50} className='w-full rounded-lg p-4' {...register('message', {required:{
-      value:true,
-      message:"Please enter your Message"
-
     },
     pattern:{
       value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
       message: "invalid Email",
     }
+    })}/>
+    <textarea   placeholder='Your Message' rows={4} cols={50} className='w-full rounded-lg p-4' {...register('message', {required:{
+      value:true,
+      message:"Please enter your Message"
+
+    },
+    
   },
     )}/>
     {errors.email && <span>{errors.email.message}</span>}
