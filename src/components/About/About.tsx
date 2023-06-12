@@ -17,7 +17,7 @@ My Long-term goals is become a Full-stack developer and further with higher posi
 </p>
       </div>
       <div className="btn-cv text-center m-6">
-<a href='/public/download/CV_TA_Truong_Cong_Trung_Front_End_Developer.pdf' className='bg-secondary rounded-full p-4  shadow-lg hover:shadow-none transition-all text-sm' download>Download My CV</a>
+<a href='https://drive.google.com/file/d/1b6J2Nd6IMxInCDWW79mkb0kdRRSslGdI/view?usp=sharing' className='bg-secondary rounded-full p-4  shadow-lg hover:shadow-none transition-all text-sm'>Download My CV</a>
 </div>
     </div>
   )
