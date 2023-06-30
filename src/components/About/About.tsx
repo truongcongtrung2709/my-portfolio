@@ -8,12 +8,11 @@ const About: React.FC = () => {
         <div className=" w-full h-full">
         <img className='w-96 mx-auto ' src="/images/avatar.jpg" alt="" />
         </div>
-        <p className='bg-primary p-4 rounded-3xl text-center md:text-2xl text-sm'>Greeting, my name is Trung, I live in Ho Chi Minh city, VietNam. I graduated at Hutech University, I'm Frontend Developer, my target is give clients have a new
-and perfect experience.
+        <p className='bg-primary p-4 rounded-3xl text-center md:text-2xl text-sm'>Hi there, my name's Trung, and I live in Ho Chi Minh City, Vietnam. I graduated from Hutech University and work as a Frontend Developer. My main goal is to make sure clients have an awesome and brand-new experience.
 <br />
-My Short-term goals is to gain more knowledge and experience.
+In the short term, I want to learn more and gain more experience. In the long term, I want to become a Full-stack Developer and reach higher positions in my career.
 <br/>
-My Long-term goals is become a Full-stack developer and further with higher positions
+Thank you for taking the time to read a little bit about me and what I hope to achieve. I'm really excited about the opportunity to use my skills and knowledge in future projects.
 </p>
       </div>
       <div className="btn-cv text-center m-6">
