@@ -16,7 +16,7 @@ Thank you for taking the time to read a little bit about me and what I hope to a
 </p>
       </div>
       <div className="btn-cv text-center m-6">
-<a href='https://drive.google.com/file/d/1b6J2Nd6IMxInCDWW79mkb0kdRRSslGdI/view?usp=sharing' className='bg-secondary rounded-full p-4  shadow-lg hover:shadow-none transition-all text-sm'>Download My CV</a>
+<a href='https://drive.google.com/file/d/1H2dIbKIUKBLf8hXN6zhgo9IuVPtVch4V/view?usp=sharing' className='bg-secondary rounded-full p-4  shadow-lg hover:shadow-none transition-all text-sm'>Download My CV</a>
 </div>
     </div>
   )
