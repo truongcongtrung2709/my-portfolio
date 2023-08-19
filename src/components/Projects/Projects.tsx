@@ -6,14 +6,15 @@ interface projectsProp{
   setShowModal: React.Dispatch<React.SetStateAction<boolean>>
 }
 const Projects:React.FC<projectsProp> = ({showModal, setShowModal}) => {
-  const [project, setProject] = useState<{id:number;name:string; description:string; demo:string; source:string}>({
+  const [project, setProject] = useState<{id:number;name:string; description:string; demo:string; source:string; image:string}>({
     id: 0,
     name: "",
     description: "",
     demo: "",
-    source: ""
+    source: "",
+    image:""
   })
-  const handleClick = (project:{id:number;name:string; description:string; demo:string; source:string}) =>{
+  const handleClick = (project:{id:number;name:string; description:string; demo:string; source:string,image:string}) =>{
     setShowModal(true)
     setProject(project)
   }

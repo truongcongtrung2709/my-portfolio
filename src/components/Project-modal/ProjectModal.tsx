@@ -8,12 +8,12 @@ export interface projects{
   showModal: boolean
   setShowModal: React.Dispatch<React.SetStateAction<boolean>>
   project:{
-    img:string,
     id:number,
     name: string,
     description: string,
     demo: string, 
     source:string,
+    image:string,
   }
 }
 const ProjectModal:React.FC<projects> = ({ 
@@ -43,7 +43,7 @@ const ProjectModal:React.FC<projects> = ({
                 </div>
                 {/*body*/}
                 <div className="relative p-6 flex-auto">
-                  <img src={project.img} alt="" />
+                  <img src={project.image} alt="" />
                   {project.description}
                 </div>
                 {/*footer*/}
