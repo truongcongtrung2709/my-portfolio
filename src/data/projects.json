@@ -34,5 +34,14 @@
         "demo": "https://www.youtube.com/watch?v=I0KU8_L65lY&;ab_channel=TrungTr%C6%B0%C6%A1ng",
         "source":"https://github.com/truongcongtrung2709/capstone__masterwork-liberty"
         
+    },
+    {
+        "id":5,
+        "image": "images/sales-score.png",
+        "name":"Sales score",
+        "description": "Build landing page website with HTML(PUG), CSS(SCSS), JS.",
+        "demo": "https://youtu.be/Y79ZZQqBS60",
+        "source":"https://github.com/truongcongtrung2709/sale-scores"
+        
     }
 ]
