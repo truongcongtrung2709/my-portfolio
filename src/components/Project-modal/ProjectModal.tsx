@@ -43,7 +43,7 @@ const ProjectModal:React.FC<projects> = ({
                 </div>
                 {/*body*/}
                 <div className="relative p-6 flex-auto">
-                  <img src={project.image} alt="" />
+                  <img className='rounded-lg mb-6' src={project.image} alt="" />
                   {project.description}
                 </div>
                 {/*footer*/}
