@@ -43,5 +43,14 @@
         "demo": "https://youtu.be/Y79ZZQqBS60",
         "source":"https://github.com/truongcongtrung2709/sale-scores"
         
+    },
+    {
+        "id":6,
+        "image": "images/portfolio.png",
+        "name":"My Portfolio",
+        "description": "Build my portfolio using Typescript-React",
+        "demo": "https://truongcongtrungportfolio.vercel.app/",
+        "source":"https://github.com/truongcongtrung2709/typereact-myportfolio"
+        
     }
 ]
