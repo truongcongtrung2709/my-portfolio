@@ -1,11 +1,11 @@
 [
     {
         "id":1,
-        "image": "/images/to-do-list.png",
-        "name":"Todo-List",
-        "description": "Create a todo-list web app, using React Typescript, SCSS",
-        "demo": "https://truongcongtrung2709-typescript-todolist.vercel.app/",
-        "source":"https://github.com/truongcongtrung2709/typescript-todolist"
+        "image": "/images/burgos.png",
+        "name":"Burgos",
+        "description": "Order Burgers website using TypeScript-React-Vite with main features is order burgers",
+        "demo": "https://burgos.vercel.app/",
+        "source":"https://github.com/truongcongtrung2709/burgos"
         
     },
     {
