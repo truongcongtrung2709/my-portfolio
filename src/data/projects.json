@@ -4,8 +4,8 @@
         "image": "/images/burgos.png",
         "name":"Burgos",
         "description": "Order Burgers website using TypeScript-React-Vite with main features is order burgers",
-        "demo": "https://burgos.vercel.app/",
-        "source":"https://github.com/truongcongtrung2709/burgos"
+        "demo": "https://burgos-reactjs.vercel.app/",
+        "source":"https://github.com/truongcongtrung2709/burgos-reactjs"
         
     },
     {
